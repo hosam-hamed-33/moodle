@@ -5,7 +5,7 @@ global $CFG;
 $CFG = new stdClass();
 
 $CFG->dbtype    = getenv('pgsql');
-$CFG->dblibrary = 'heroku pg:psql postgresql-objective-96403 --app al-hidaya';
+$CFG->dblibrary = 'org.postgresql.Driver';
 $CFG->dbhost    = getenv('ec2-3-95-87-221.compute-1.amazonaws.com');
 $CFG->dbname    = getenv('dekfu3lju68ui1');
 $CFG->dbuser    = getenv('vpbzgxaqspzbst');
