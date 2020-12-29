@@ -6,18 +6,18 @@ $CFG = new stdClass();
 
 $CFG->dbtype    = getenv('pgsql');
 $CFG->dblibrary = 'org.postgresql.Driver';
-$CFG->dbhost    = getenv('ec2-3-95-87-221.compute-1.amazonaws.com');
-$CFG->dbname    = getenv('dekfu3lju68ui1');
-$CFG->dbuser    = getenv('vpbzgxaqspzbst');
-$CFG->dbpass    = getenv('cfeaf9f08ff535e3e5a46ce6e22197e445b544ce97cf3d8461965408036b0d2a');
+$CFG->dbhost    = 'ec2-3-95-87-221.compute-1.amazonaws.com';
+$CFG->dbname    = 'dekfu3lju68ui1';
+$CFG->dbuser    = 'vpbzgxaqspzbst';
+$CFG->dbpass    = 'cfeaf9f08ff535e3e5a46ce6e22197e445b544ce97cf3d8461965408036b0d2a';
 $CFG->prefix    = 'mdl_';
 $CFG->dboptions = array (
   'dbpersist' => 0,
-  'dbport' => getenv('DATABASE_PORT'),
+  'dbport' => 5432,
   'dbsocket' => '',
 );
 
-$CFG->wwwroot   = getenv('http://al-hidaya.herokuapp.com/');
+$CFG->wwwroot   = 'http://al-hidaya.herokuapp.com/';
 $CFG->dataroot  = getenv('DATAROOT');
 $CFG->admin     = 'admin';
 
