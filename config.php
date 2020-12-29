@@ -5,7 +5,7 @@ global $CFG;
 $CFG = new stdClass();
 
 $CFG->dbtype    = getenv('pgsql');
-$CFG->dblibrary = 'org.postgresql.Driver';
+$CFG->dblibrary = 'native';
 $CFG->dbhost    = 'ec2-3-95-87-221.compute-1.amazonaws.com';
 $CFG->dbname    = 'dekfu3lju68ui1';
 $CFG->dbuser    = 'vpbzgxaqspzbst';
